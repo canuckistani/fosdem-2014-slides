@@ -1,0 +1,12 @@
+body, .reveal {
+  background-color: #000;
+}
+
+.pop {
+  color: rgba(177, 20, 20, 1);
+}
+
+.pop-black {
+  color: #efefef;
+  text-shadow: #000 2px 2px;
+}
