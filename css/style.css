@@ -10,3 +10,16 @@ body, .reveal {
   color: #efefef;
   text-shadow: #000 2px 2px;
 }
+
+.reveal .slides > section {
+  padding-top: 0;
+}
+
+.reveal .slides > section img {
+  margin: 0;
+  max-width: 140%;
+}
+
+div.slides {
+  width: 100%;
+}
