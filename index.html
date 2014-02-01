@@ -60,10 +60,10 @@
 
 	<section>
     <h1>Some add-ons</h1>
-    <ul class="fragments">
-    	<li class="fragment"><a href="https://github.com/paulrouget/firefox-jsterm">JSTerm</a></li>
-    	<li class="fragment"><a href="https://github.com/rpl/rdp-monitor-jpext">RDP Monitor</a></li>
-    	<li class="fragment"><a href="https://github.com/tildeio/ember-extension">Ember Inspector</a></li>
+    <ul>
+    	<li><a href="https://github.com/paulrouget/firefox-jsterm">JSTerm</a></li>
+    	<li><a href="https://github.com/rpl/rdp-monitor-jpext">RDP Monitor</a></li>
+    	<li><a href="https://github.com/tildeio/ember-extension">Ember Inspector</a></li>
     </ul>
 	</section>
 
@@ -73,8 +73,9 @@
 	</section>
 
   <section>
-      <h1>Restartless Template</h1>
+      <h1><span class="pop">Restartless</span> Template</h1>
       <ul class="fragments">
+        <li class="fragment">by Devtools hacker Victor Porof</li>
         <li class="fragment">If you're more used to 'classic' add-ons.</li>
         <li class="fragment">You can even use XUL!</li>
         <li class="fragment"><a href="https://github.com/victorporof/Restartless-Template">Gitub repro</a></li>
@@ -82,7 +83,8 @@
   </section>
 
   <section>
-      <h1>Add-on SDK <br><span class="pop">(aka Jetpack)</span></h1>
+      <h1>Add-on SDK</h1>
+      <h3><span class="pop">(aka Jetpack)</span></h3>
       <!-- <img style="border: none;" height="450px" src="./media/jetpack.png"/> -->
       <ul class="fragments">
         <li class="fragment">Used by Ember Inspector and RDP Monitor</li>
@@ -136,7 +138,7 @@
 <!-- https://github.com/Gozala/addon-sdk/blob/5668b4be8f4b734fa3d858545218e7b00e84c763/Developer%20pane.md -->
 
 <section>
-    <h1>Better Devtools APIs</h1>
+    <h1>Better <span class="pop">Devtools APIs</span></h1>
     <ul class="fragments">
       <li class="fragment">Jetpack-style modules</li>
       <li class="fragment">Simple things are simple!</li>
@@ -149,7 +151,7 @@
 const pane = new Pane({
   title: "Addon pad",
   url: "./index.html",
-  onMessage: function ({source, data, origin, target}) {
+  onMessage: function (source, data, origin, target) {
     console.log("Forward pane message to an inspect target", data);
     target.inspectTarget.postMessage(data, target.inspectTarget.origin);
   }
@@ -172,15 +174,27 @@ const pane = new Pane({
   <p> Everything you should need is provided as arguments to your event handlers. Communication is simple and direct.</p>
 </section>
 
-<section data-background="./media/dino-wallpaper.png">
-    <h1>THANKS!</h1>
-    <h3>Slides: <a target="_blank" href="http://canuckistani.github.io/fosdem-2014-slides">http://canuckistani.github.io/fosdem-2014-slides</a></h3>
-    <h3>Twitter: <a target="_blank" href="https://twitter.com/firefoxdevtools">@FirefoxDevtools</a></h3>
-    <h3>Contact us on IRC:</h3>
-    <ul>
-      <li>#jetpack</li>
-      <li>#devtools</li>
+<section>
+    <h1>Ember Inspector</h1>
+    <ul class="fragments">
+      <li class="fragment">Not just a cross-browser add-on</li>
+      <li class="fragment">An Ember.js app embedded into an add-on</li>
+      <li class="fragment">Easier for Ember developers to contribute</li>
     </ul>
+</section>
+
+<section>
+  <!-- style=" border: 4px solid rgba(255, 255, 255, 0.5); border-radius: 20px; background-color: rgba(255, 255, 255, 0.25); display: block; height: 95%; padding: 60px 0;" -->
+    <div>
+      <h1>THANKS!</h1>
+      <h3>Slides: <a target="_blank" href="http://canuckistani.github.io/fosdem-2014-slides">http://canuckistani.github.io/fosdem-2014-slides</a></h3>
+      <h3>Twitter: <a target="_blank" href="https://twitter.com/firefoxdevtools">@FirefoxDevtools</a></h3>
+      <h3>Contact us on IRC:</h3>
+      <ul>
+        <li>#jetpack</li>
+        <li>#devtools</li>
+      </ul>
+    </div>
 </section>
 
 <!-- end talk -->

@@ -23,3 +23,7 @@ body, .reveal {
 div.slides {
   width: 100%;
 }
+
+.reveal a:not(.image) {
+  color: #B11414;
+}
