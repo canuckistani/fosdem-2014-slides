@@ -1,5 +1,5 @@
 body, .reveal {
-  background-color: #000;
+  background-color: #232323;
 }
 
 .pop {
@@ -27,3 +27,15 @@ div.slides {
 .reveal a:not(.image) {
   color: #B11414;
 }
+
+.reveal h1 {
+  text-shadow: 7px 7px 2px #121212;
+}
+
+.reveal h1 .pop {
+  text-shadow: 7px 7px 2px #000;
+}
+
+/*.reveal ul > li > span.pop {
+  text-shadow: 2px 2px 2px #fff;
+}*/
